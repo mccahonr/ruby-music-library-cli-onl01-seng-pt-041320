@@ -18,4 +18,10 @@ class Artist
   def save
     @@all << self
   end
+
+  def self.create(artist)
+    created_artist = self.new(artist)
+    @@all << created_artist
+    created_artist
+  end
 end
