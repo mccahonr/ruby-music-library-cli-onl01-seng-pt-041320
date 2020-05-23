@@ -26,4 +26,8 @@ class Artist
     @@all << created_artist
     created_artist
   end
+
+  def songs
+    @songs
+  end
 end
